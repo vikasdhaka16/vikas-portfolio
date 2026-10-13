@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vikas Dhaka — Flutter Developer</title>
+  <meta name="description" content="Vikas Dhaka — Flutter Developer with 3 years of experience building production-ready Android & iOS apps with Flutter, Dart, Bloc, GetX and Firebase." />
+  <meta property="og:title" content="Vikas Dhaka — Flutter Developer" />
+  <meta property="og:description" content="Cross-platform mobile apps with Flutter & Dart. Bloc · GetX · Clean Architecture · Firebase · Shorebird OTA." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b0f17" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230b0f17'/><text x='50%25' y='56%25' font-family='Arial' font-weight='700' font-size='30' fill='%2354c5f8' text-anchor='middle' dominant-baseline='middle'>VD</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    document.documentElement.classList.add('js');
+    // Apply saved theme before paint to avoid a flash
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo" aria-label="Home">
+        <span class="logo-mark">VD</span>
+        <span class="logo-text">vikas<span class="accent">.dev</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+        </button>
+        <a href="Vikas_Dhaka_Resume.pdf" class="btn btn-sm btn-ghost hide-sm" download>Resume</a>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="status reveal"><span class="pulse"></span> Based in Sonipat, Haryana</p>
+        <h1 class="reveal">
+          Hi, I'm <span class="grad">Vikas Dhaka</span>.<br />
+          I build <span class="typed" id="typed">Flutter apps</span><span class="caret">|</span>
+        </h1>
+        <p class="lead reveal">
+          Flutter Developer with <strong>3 years</strong> of experience shipping cross-platform
+          apps for Android &amp; iOS — from live CCTV streaming to HRMS, ed-tech and consumer
+          deal discovery. I care about clean architecture, smooth UI and apps that work offline.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">View my work
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="mailto:vikasdhaka016@gmail.com" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <ul class="socials reveal">
+          <li><a href="https://github.com/vikasdhaka16" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+          </a></li>
+          <li><a href="https://linkedin.com/in/vikas-dhaka" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          </a></li>
+          <li><a href="mailto:vikasdhaka016@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          </a></li>
+          <li><a href="tel:+919355490324" aria-label="Phone">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          </a></li>
+        </ul>
+      </div>
+
+      <!-- Phone mockup -->
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="phone" id="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="app-bar">
+              <span class="app-dot"></span>
+              <span class="app-title">my_apps.dart</span>
+            </div>
+            <div class="app-card c1"><span class="ac-ico">🏷️</span><div><b>PinnTag</b><small>Offers · Events · Flash Deals</small></div></div>
+            <div class="app-card c2"><span class="ac-ico">📰</span><div><b>VisionIAS</b><small>DCA module · Faculty app</small></div></div>
+            <div class="app-card c3"><span class="ac-ico">📍</span><div><b>Sparsh Hub</b><small>GPS attendance · Leaves</small></div></div>
+            <div class="app-card c4"><span class="ac-ico">🍽️</span><div><b>Dinelyte</b><small>Discover · Order · Pay</small></div></div>
+            <div class="app-card c5"><span class="ac-ico">📹</span><div><b>VMS</b><small>Live CCTV · PTZ · Playback</small></div></div>
+          </div>
+        </div>
+        <div class="float-chip fc1"><span class="mono">Bloc</span></div>
+        <div class="float-chip fc2"><span class="mono">Shorebird OTA</span></div>
+        <div class="float-chip fc3"><span class="mono">Firebase</span></div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="container stats">
+      <div class="stat reveal"><b data-count="3" data-suffix="+">0</b><span>Years of Flutter</span></div>
+      <div class="stat reveal"><b data-count="6" data-suffix="+">0</b><span>Production apps</span></div>
+      <div class="stat reveal"><b data-count="3">0</b><span>Companies</span></div>
+      <div class="stat reveal"><b data-count="8.5" data-decimals="1">0</b><span>B.Tech CGPA</span></div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section container">
+      <div class="section-head reveal">
+        <span class="kicker mono">01 · about</span>
+        <h2>Shipping apps people actually use</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a Flutter Developer from Sonipat, Haryana who loves turning product ideas into fast,
+            polished mobile experiences on both Android and iOS from a single codebase.
+          </p>
+          <p>
+            Over the last three years I've built a video management system streaming live
+            CCTV feeds, an HRMS with GPS attendance and offline sync, embedded a Flutter module
+            inside a native Android app used by thousands of aspirants, and I'm now building
+            consumer features at PinnTag with over-the-air updates via Shorebird.
+          </p>
+          <p>
+            My toolkit centres on <strong>Bloc, GetX, Clean Architecture</strong> and
+            <strong>Firebase</strong>, with a strong focus on offline-first data using
+            Sqflite and Hive.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <pre class="code mono"><code><span class="k">class</span> <span class="t">Vikas</span> <span class="k">extends</span> <span class="t">Developer</span> {
+  <span class="k">final</span> role     = <span class="s">'Flutter Developer'</span>;
+  <span class="k">final</span> location = <span class="s">'Sonipat, Haryana'</span>;
+  <span class="k">final</span> stack    = [<span class="s">'Flutter'</span>, <span class="s">'Dart'</span>,
+                  <span class="s">'Bloc'</span>, <span class="s">'GetX'</span>,
+                  <span class="s">'Firebase'</span>];
+
+  <span class="m">@override</span>
+  <span class="t">Widget</span> <span class="f">build</span>(context) =&gt;
+      <span class="t">CleanArchitecture</span>(
+        offlineFirst: <span class="k">true</span>,
+        child: <span class="t">BeautifulUI</span>(),
+      );
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section container">
+      <div class="section-head reveal">
+        <span class="kicker mono">02 · experience</span>
+        <h2>Where I've worked</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="t-item reveal">
+          <div class="t-dot now"></div>
+          <div class="t-card">
+            <div class="t-top">
+              <div>
+                <h3>Flutter Developer</h3>
+                <p class="t-co">PinnTag <span>(Manira Technologies)</span></p>
+              </div>
+              <div class="t-meta">
+                <span class="badge live">July 2026 – Present</span>
+                <small>Noida, Uttar Pradesh</small>
+              </div>
+            </div>
+            <ul>
+              <li>Developed PinnTag Consumer App features including Offers, Events, Flash Deals, Spotlight, Business Details and Broadcasts.</li>
+              <li>Implemented Shorebird OTA updates and fixed UI, navigation and location-based filtering issues.</li>
+            </ul>
+            <div class="chips"><span>Flutter</span><span>Bloc</span><span>REST APIs</span><span>Shorebird</span></div>
+          </div>
+        </li>
+
+        <li class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-top">
+              <div>
+                <h3>Flutter Developer</h3>
+                <p class="t-co">Vision IAS <span>(Ajayvision Education Pvt. Ltd.)</span></p>
+              </div>
+              <div class="t-meta">
+                <span class="badge">Sept 2025 – July 2026</span>
+                <small>Noida, Uttar Pradesh</small>
+              </div>
+            </div>
+            <ul>
+              <li>Integrated the DCA module into the live VisionIAS Android app using FlutterFragment — article notes, daily news summaries and Economy Sprint.</li>
+              <li>Developed the Vision Faculty App for schedules, timetables, academic events and handout management using Bloc and MVC.</li>
+            </ul>
+            <div class="chips"><span>FlutterFragment</span><span>Bloc</span><span>MVC</span><span>Native Android</span></div>
+          </div>
+        </li>
+
+        <li class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-top">
+              <div>
+                <h3>Flutter Developer</h3>
+                <p class="t-co">Samriddhi Automations Pvt. Ltd.</p>
+              </div>
+              <div class="t-meta">
+                <span class="badge">Oct 2023 – Aug 2025</span>
+                <small>Panipat, Haryana</small>
+              </div>
+            </div>
+            <ul>
+              <li>Developed Video Management Software (VMS) for live CCTV feeds, PTZ controls, event playback and low-bandwidth streaming using Flutter and VLC Player.</li>
+              <li>Built an HRMS with GPS attendance, leave management, salary tracking, task assignment, offline storage and Firebase push notifications.</li>
+            </ul>
+            <div class="chips"><span>VLC Player</span><span>GetX</span><span>Sqflite</span><span>Firebase</span></div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section container">
+      <div class="section-head reveal">
+        <span class="kicker mono">03 · projects</span>
+        <h2>Apps I've shipped</h2>
+        <p class="sub">Live on the Play Store and App Store.</p>
+      </div>
+
+      <!--
+        TODO: Store links — paste each app's Play Store / App Store URL into href="".
+        Buttons with an empty href are hidden automatically.
+      -->
+      <div class="projects">
+        <article class="project reveal" style="--p:#ff6b6b;--p2:#ffb86b">
+          <div class="p-head">
+            <span class="p-ico">🏷️</span>
+            <span class="p-year mono">2026</span>
+          </div>
+          <h3>PinnTag Consumer App</h3>
+          <p>Local deals and discovery app. Built Offers, Events, Flash Deals, Spotlight, Business Details and Broadcast features, and shipped instant fixes with Shorebird OTA.</p>
+          <div class="chips"><span>Flutter</span><span>Bloc</span><span>REST APIs</span><span>Shorebird OTA</span></div>
+          <div class="p-links">
+            <a class="store" href="https://play.google.com/store/apps/details?id=com.pinntag.pinntagUS" target="_blank" rel="noopener">▶ Play Store</a>
+            <a class="store" href="https://apps.apple.com/app/pinntag/id6448201172" target="_blank" rel="noopener"> App Store</a>
+          </div>
+        </article>
+
+        <article class="project reveal" style="--p:#54c5f8;--p2:#7c5cff">
+          <div class="p-head">
+            <span class="p-ico">📰</span>
+            <span class="p-year mono">2025</span>
+          </div>
+          <h3>VisionIAS DCA Module</h3>
+          <p>Flutter module embedded into the native Android VisionIAS app via FlutterFragment — article notes, daily news summaries and Economy Sprint powered by REST APIs.</p>
+          <div class="chips"><span>Flutter</span><span>FlutterFragment</span><span>REST APIs</span></div>
+          <div class="p-links">
+            <a class="store" href="https://play.google.com/store/apps/details?id=com.vision.visionias.app" target="_blank" rel="noopener">▶ Play Store</a>
+            <a class="store" href="https://apps.apple.com/in/app/vision-ias/id1375991704" target="_blank" rel="noopener"> App Store</a>
+          </div>
+        </article>
+
+        <article class="project reveal" style="--p:#a78bfa;--p2:#2ee59d">
+          <div class="p-head">
+            <span class="p-ico">🗓️</span>
+            <span class="p-year mono">2025</span>
+          </div>
+          <h3>Vision Faculty App</h3>
+          <p>Internal app for VisionIAS faculty to manage class schedules, timetables, academic events and handouts — built with Bloc and MVC.</p>
+          <div class="chips"><span>Flutter</span><span>Bloc</span><span>MVC</span><span>REST APIs</span></div>
+          <div class="p-links">
+            <a class="store" href="" target="_blank" rel="noopener">▶ Play Store</a>
+            <a class="store" href="" target="_blank" rel="noopener"> App Store</a>
+          </div>
+        </article>
+
+        <article class="project reveal" style="--p:#2ee59d;--p2:#54c5f8">
+          <div class="p-head">
+            <span class="p-ico">📍</span>
+            <span class="p-year mono">2024</span>
+          </div>
+          <h3>Sparsh Hub</h3>
+          <p>Full HR suite in your pocket — GPS attendance, leave management, salary tracking, WFH and task management, with offline storage and Firebase push notifications.</p>
+          <div class="chips"><span>Flutter</span><span>GetX</span><span>Sqflite</span><span>Firebase</span></div>
+          <div class="p-links">
+            <a class="store" href="https://play.google.com/store/apps/details?id=com.sparshcctvhr.app" target="_blank" rel="noopener">▶ Play Store</a>
+            <a class="store" href="https://apps.apple.com/us/app/sparsh-hrms/id6502435816" target="_blank" rel="noopener"> App Store</a>
+          </div>
+        </article>
+
+        <article class="project reveal" style="--p:#ffb86b;--p2:#ff6bcb">
+          <div class="p-head">
+            <span class="p-ico">🍽️</span>
+            <span class="p-year mono">2024</span>
+          </div>
+          <h3>Dinelyte</h3>
+          <p>Restaurant discovery and dine-in ordering — map selection, menu browsing, table selection, order tracking and Razorpay payments with a local cart and favourites.</p>
+          <div class="chips"><span>Flutter</span><span>Bloc</span><span>Hive</span><span>Razorpay</span></div>
+          <div class="p-links">
+            <a class="store" href="https://play.google.com/store/apps/details?id=com.dinelyte.app" target="_blank" rel="noopener">▶ Play Store</a>
+            <a class="store" href="https://apps.apple.com/in/app/dinelyte/id6770259975" target="_blank" rel="noopener"> App Store</a>
+          </div>
+        </article>
+
+        <article class="project reveal" style="--p:#7c5cff;--p2:#54c5f8">
+          <div class="p-head">
+            <span class="p-ico">📹</span>
+            <span class="p-year mono">2023–25</span>
+          </div>
+          <h3>Video Management Software (VMS)</h3>
+          <p>Surveillance app for live CCTV feeds with PTZ camera controls, event playback and low-bandwidth streaming, built with Flutter and VLC Player at Samriddhi Automations.</p>
+          <div class="chips"><span>Flutter</span><span>VLC Player</span><span>Live Streaming</span><span>PTZ</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section container">
+      <div class="section-head reveal">
+        <span class="kicker mono">04 · skills</span>
+        <h2>Tech I work with</h2>
+      </div>
+
+      <div class="skills">
+        <div class="skill-group reveal">
+          <h4><span class="sg-ico">📱</span>Mobile Development</h4>
+          <div class="chips lg"><span>Flutter</span><span>Dart</span><span>Android</span><span>iOS</span><span>Cross-Platform</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h4><span class="sg-ico">🧠</span>State Management</h4>
+          <div class="chips lg"><span>Bloc</span><span>Cubit</span><span>GetX</span><span>Provider</span><span>setState</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h4><span class="sg-ico">🗄️</span>Backend &amp; Database</h4>
+          <div class="chips lg"><span>REST APIs</span><span>Firebase</span><span>Firestore</span><span>Sqflite</span><span>Hive</span><span>MongoDB</span><span>Node.js</span><span>Express.js</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h4><span class="sg-ico">🏛️</span>Architecture &amp; Patterns</h4>
+          <div class="chips lg"><span>Clean Architecture</span><span>MVC</span><span>MVVM</span><span>Repository Pattern</span><span>Dependency Injection</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h4><span class="sg-ico">🛠️</span>Tools &amp; DevOps</h4>
+          <div class="chips lg"><span>Git</span><span>GitHub</span><span>Bitbucket</span><span>Android Studio</span><span>VS Code</span><span>CI/CD</span><span>Shorebird OTA</span><span>Dart DevTools</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h4><span class="sg-ico">✨</span>Other</h4>
+          <div class="chips lg"><span>Push Notifications</span><span>Razorpay</span><span>OpenStreetMap</span><span>VLC Player</span><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>C</span><span>C++</span><span>DSA</span></div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track mono">
+          <span>Team Collaboration</span><span>✦</span><span>Leadership</span><span>✦</span><span>Problem Solving</span><span>✦</span><span>Agile</span><span>✦</span><span>Communication</span><span>✦</span><span>Skill Development</span><span>✦</span>
+          <span>Team Collaboration</span><span>✦</span><span>Leadership</span><span>✦</span><span>Problem Solving</span><span>✦</span><span>Agile</span><span>✦</span><span>Communication</span><span>✦</span><span>Skill Development</span><span>✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section container">
+      <div class="section-head reveal">
+        <span class="kicker mono">05 · education</span>
+        <h2>Education</h2>
+      </div>
+      <div class="edu reveal">
+        <div class="edu-ico">🎓</div>
+        <div class="edu-body">
+          <h3>B.Tech, Computer Science</h3>
+          <p>Panipat Institute of Engineering &amp; Technology · Panipat, Haryana</p>
+        </div>
+        <div class="edu-meta">
+          <span class="badge">Aug 2019 – June 2023</span>
+          <b class="cgpa">8.5 <small>CGPA</small></b>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section container">
+      <div class="contact reveal">
+        <span class="kicker mono">06 · contact</span>
+        <h2>Let's build something <span class="grad">great</span> together.</h2>
+        <p>Open to Flutter roles, freelance projects and interesting collaborations. My inbox is always open.</p>
+        <div class="contact-cta">
+          <a href="mailto:vikasdhaka016@gmail.com" class="btn btn-primary btn-lg">vikasdhaka016@gmail.com</a>
+          <button class="btn btn-ghost btn-lg" id="copyEmail" data-email="vikasdhaka016@gmail.com">Copy email</button>
+        </div>
+        <div class="contact-links">
+          <a href="tel:+919355490324">+91 93554 90324</a>
+          <a href="https://linkedin.com/in/vikas-dhaka" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/vikasdhaka16" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year"></span> Vikas Dhaka. Crafted with care — and a lot of hot reloads.</p>
+    <a href="#top" class="mono">back to top ↑</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
